@@ -8,6 +8,8 @@ import Project from "./components/Project/Project-1"
 import Test from "./components/Test/Test"
 import "./index.css"
 import Root from "./Root"
+import UseMemoHook from "./components/Hooks/UseMemo/UseMemo"
+import UseRefHook from "./components/Hooks/UseRef/UseRefHook"
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(
@@ -19,6 +21,8 @@ root.render(
         <Route path='/test' element={<Test />}></Route>
         <Route path='/states' element={<UseStates />}></Route>
         <Route path='/callback' element={<CallbackHook />}></Route>
+        <Route path='/usememo' element={<UseMemoHook />}></Route>
+        <Route path='/useref' element={<UseRefHook />}></Route>
         <Route path='/project' element={<Project />}></Route>
       </Routes>
     </BrowserRouter>

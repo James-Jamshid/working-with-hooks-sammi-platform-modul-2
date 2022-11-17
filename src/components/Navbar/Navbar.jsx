@@ -22,6 +22,12 @@ const Navbar = () => {
         <Link to='/callback'>
           <button className='btn btn-outline-dark'>Callback Hooks</button>
         </Link>
+        <Link to='/usememo'>
+          <button className='btn btn-outline-dark'>UseMemo Hooks</button>
+        </Link>
+        <Link to='/useref'>
+          <button className='btn btn-outline-dark'>UseRef Hooks</button>
+        </Link>
         <Link to='/project'>
           <button className='btn btn-outline-dark'>Project</button>
         </Link>
