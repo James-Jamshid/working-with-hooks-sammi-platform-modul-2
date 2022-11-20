@@ -20,6 +20,10 @@ const UseRefHook = () => {
       cvcNumbRef.current.focus()
     }
   }
+  //QOIDA:
+  //1)Reflar ozimini prerenderimiz ishga tushganida, ya'ni state ozgarib render boganda reflar ozgarmidi.
+  //2)UseRefning asosiy vazifasi bu elementga reference ya'ni havola qoldirish
+
   //biz hozir nima qildik? 2ta input ochib 1-inputga 16ta raqam yozilgandan keyin avtomat tarizda 2- inputga focus qildik.
   //buning uchun 2chi input ozii ref metodini berib olib yuqoridagi funksiyamizni yozdik.
 
