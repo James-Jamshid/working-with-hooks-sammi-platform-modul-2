@@ -1,4 +1,4 @@
 const Root = () => {
-  return <div>Root</div>
+  return <div>hello world</div>
 }
 export default Root

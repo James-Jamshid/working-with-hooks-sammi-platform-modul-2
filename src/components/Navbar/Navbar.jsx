@@ -20,13 +20,16 @@ const Navbar = () => {
           <button className='btn btn-outline-dark'>States</button>
         </Link>
         <Link to='/callback'>
-          <button className='btn btn-outline-dark'>Callback Hooks</button>
+          <button className='btn btn-outline-dark'>Callback Hook</button>
         </Link>
         <Link to='/usememo'>
-          <button className='btn btn-outline-dark'>UseMemo Hooks</button>
+          <button className='btn btn-outline-dark'>UseMemo Hook</button>
         </Link>
         <Link to='/useref'>
-          <button className='btn btn-outline-dark'>UseRef Hooks</button>
+          <button className='btn btn-outline-dark'>UseRef Hook</button>
+        </Link>
+        <Link to='/customhook'>
+          <button className='btn btn-outline-dark'>Custom Hook</button>
         </Link>
         <Link to='/project'>
           <button className='btn btn-outline-dark'>Project</button>

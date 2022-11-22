@@ -10,6 +10,7 @@ import Root from "./Root"
 import UseMemoHook from "./components/Hooks/UseMemo/UseMemo"
 import UseRefHook from "./components/Hooks/UseRef/UseRefHook"
 import App from "./components/Project/Project-1/App/App"
+import CustomHook from "./components/Hooks/Custom Hook/CustomHook"
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(
@@ -23,6 +24,7 @@ root.render(
         <Route path='/callback' element={<CallbackHook />}></Route>
         <Route path='/usememo' element={<UseMemoHook />}></Route>
         <Route path='/useref' element={<UseRefHook />}></Route>
+        <Route path='/customhook' element={<CustomHook />}></Route>
         <Route path='/project' element={<App />}></Route>
       </Routes>
     </BrowserRouter>
