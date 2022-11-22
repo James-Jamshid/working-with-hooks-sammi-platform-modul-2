@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react"
 const Guest = (props) => {
   const [counter, setCounter] = useState(0)
   const [isLogin, setIsLogin] = useState(false)
-  // const [text, setText] = useState("input")
   const onInc = () => {
     setCounter(counter + 1)
     // setCounter(prevCounter=>prevCounter + 1)  bu kod ham yuqoridagi b bir xil ishldi. lekin bu kodni 2 marta yozib qoysak 2taga qoshib yuboradi.
@@ -17,7 +16,7 @@ const Guest = (props) => {
     setCounter(0)
   }
   const onLogin = () => {
-    setIsLogin({ isLogin: !isLogin })
+    setIsLogin((isLogin) => !isLogin)
     // setIsLogin(prevState=>!prevState)   bu prevstate bilan berilgani.
   }
   //useEffect hook imiz class componentdagi component didmount, component did update va component wil unmount hodisalirini ornini bosuvchidir

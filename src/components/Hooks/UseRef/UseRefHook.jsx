@@ -2,9 +2,11 @@ import React, { useState, useRef } from "react"
 const UseRefHook = () => {
   const [cvcNumber, setCvcNumber] = useState("")
   const [cardNumber, setCardNumber] = useState("")
+  const [anum, setAnum] = useState("")
 
   const cvcRef = useRef(null)
   const cvcNumbRef = useRef(null)
+  const secureNumber = useRef(null)
   const handleInput = (e) => {
     const val = e.target.value
     setCardNumber(val)
@@ -18,6 +20,13 @@ const UseRefHook = () => {
     setCvcNumber(val)
     if (val.length === 3) {
       cvcNumbRef.current.focus()
+    }
+  }
+  const Onnumber = (e) => {
+    const val = e.target.value
+    setAnum(val)
+    if (val.length === 4) {
+      secureNumber.current.focus()
     }
   }
   //QOIDA:
@@ -48,10 +57,18 @@ const UseRefHook = () => {
               placeholder='3 cvc number..'
             />
             <input
+              onChange={Onnumber}
+              value={anum}
               ref={cvcNumbRef}
               type='text'
               className='form-control'
               placeholder='birth year...'
+            />
+            <input
+              ref={secureNumber}
+              type='number'
+              className='form-control'
+              placeholder='Enter numbers only...'
             />
             <button type='submit' className='btn btn-success bg-green-600'>
               submit
